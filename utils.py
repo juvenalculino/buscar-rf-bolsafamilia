@@ -1471,3 +1471,7 @@ def carregar_estados():
           json_estados = f.read()
     estados = json.loads(json_estados)
     return estados
+
+def carregar_unipessoal(caminho_arquivo):
+    colunas = ['cod_familiar', 'endereco', 'nome', 'cpf', 'rf']
+    return pd.read_csv(caminho_arquivo, encoding='unicode_escape', sep=',', usecols=colunas)
