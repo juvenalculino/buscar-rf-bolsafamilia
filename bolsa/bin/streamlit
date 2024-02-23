@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/wh1t3/Documentos/Bolsa Familia/buscar-rf-bolsafamilia/bolsa/bin/python3.11" "$0" "$@"
+'''exec' "/home/wh1t3/Documentos/Bolsa Familia/buscar-rf-bolsafamilia/bolsa/bin/python3.9" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re
