@@ -4,12 +4,6 @@ from threading import Thread
 from streamlit_option_menu import option_menu
 
 
-
-
-
-
-
-
 selected = option_menu(
     menu_title = "MENU",
     options=["BENÉFICIOS", "UNIPESSOAL"],
