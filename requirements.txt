@@ -10,7 +10,7 @@ GitPython==3.1.42
 idna==3.6
 importlib-metadata==6.7.0
 Jinja2==3.1.2
-jsonschema==4.21.0
+jsonschema==4.17.3
 jsonschema-specifications==2023.11.2
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
