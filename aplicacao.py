@@ -80,7 +80,7 @@ if selected == 'BENÉFICIOS':
 
 if selected == 'UNIPESSOAL':
     caminho_arquivo = carregar_unipessoal(f'unipessoal/unipessoal.csv')
-
+    caminho_arquivo['cod_familiar'] = caminho_arquivo["cod_familiar"].astype('str')
     nome_cpf = st.text_input("Nome, cpf ou endereço: ").upper()
 
 
@@ -91,4 +91,5 @@ if selected == 'UNIPESSOAL':
                     (df['endereco'].str.contains(valor))]
     # Realizar a busca
     df_busca = buscar_por_nome_cpf_endereco(caminho_arquivo.copy(), nome_cpf)
+   
     st.dataframe(df_busca)
