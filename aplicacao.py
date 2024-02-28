@@ -86,9 +86,9 @@ if selected == 'UNIPESSOAL':
 
 
     def buscar_por_nome_cpf_endereco(df, valor):
-        return df.loc[(df['nome'].str.contains(valor)) |
-                    (df['cpf'].str.contains(valor)) |
-                    (df['endereco'].str.contains(valor))]
+        return df.loc[(df['nome'].str.contains(remove_pontuacao(valor))) |
+                    (df['cpf'].str.contains(remove_pontuacao(valor))) |
+                    (df['endereco'].str.contains(remove_pontuacao(valor)))]
     # Realizar a busca
     df_busca = buscar_por_nome_cpf_endereco(caminho_arquivo.copy(), nome_cpf)
    
