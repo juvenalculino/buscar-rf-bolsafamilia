@@ -12,12 +12,15 @@ selected = option_menu(
     default_index=1,
     orientation='horizontal',
     styles={
-        "container": {"padding": "0!important", "background-color": "#fafafa"},
-        "icon": {"color": "orange", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-color": "green"},
+    "container": {"margin": "0px !important", "padding": "0!important", "align-items": "stretch", "background-color": "#fafafa"},
+    "icon": {"color": "black", "font-size": "20px"}, 
+    "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+    "nav-link-selected": {"background-color": "green", "font-size": "20px", "font-weight": "bold", "color": "black", },
+
+
     }
 )
+
 
 # carregar dicionario json
 estados = carregar_estados()
